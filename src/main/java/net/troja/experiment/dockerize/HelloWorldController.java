@@ -13,6 +13,6 @@ public class HelloWorldController {
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
         return new Greeting(counter.incrementAndGet(),
-                "Hello " + name);
+                "Hello " + name + "!");
     }
 }
